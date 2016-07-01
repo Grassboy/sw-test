@@ -20,7 +20,7 @@
             navigator.serviceWorker.register('./service-worker.js', {
                 scope: './'
             }).then(function(registration) {
-                document.querySelector('#status').textContent = 'succeeded';
+                document.querySelector('#status').textContent = 'succeeded '+registration.scope;
             }).
             catch(function(error) {
                 document.querySelector('#status').textContent = error;
