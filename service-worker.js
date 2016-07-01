@@ -8,7 +8,7 @@ self.addEventListener('install', function(e){
                 '/sw-test/index.html',
                 '/sw-test/gallery/bountyHunters.jpg'
             ]);
-        });
+        })
     );
 });
 self.addEventListener('fetch', function(e){

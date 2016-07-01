@@ -21,7 +21,7 @@
             navigator.serviceWorker.register('./service-worker.js', {
                 scope: './'
             }).then(function(registration) {
-                document.querySelector('#status').textContent = 'yoe test succeeded '+registration.scope;
+                document.querySelector('#status').textContent = '噗 test succeeded '+registration.scope;
                 $('<img src="/sw-test/gallery/bountyHunters.jpg">').appendTo('body');
             }).
             catch(function(error) {
