@@ -1,5 +1,6 @@
 var VERSION = 'v1';
-self.addEventListener('install', function(e){
+console.log('test');
+this.addEventListener('install', function(e){
     console.log('service worker installed');
     e.waitUntil(
         caches.open(VERSION).then(function(cache){
@@ -11,7 +12,7 @@ self.addEventListener('install', function(e){
         })
     );
 });
-self.addEventListener('fetch', function(e){
+this.addEventListener('fetch', function(e){
     console.log('Start Fetch with URL: ', e.request.url);
     e.respondWith(
         caches.match(e.request).then(function(rsp){
