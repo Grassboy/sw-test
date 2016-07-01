@@ -1,3 +1,7 @@
+Hello World
+===========
+
+
 # sw-test
 Service Worker test repository. This is a very simple demo to show basic service worker features in action.
 
